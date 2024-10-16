@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%; height: 100%;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fly across the sky with us, Bukhari Airlines.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googlefonts.cn/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="shortcut icon" href="image/logoB.svg">
+  <title>Count</title>
+</head>
+
+<script>
+/* Countdown Trial SPM */
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 22, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+/*Countdown SPM */
+// Set the date we're counting down to
+var countDownDate2 = new Date("February 20, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate2 - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo2").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+<body
+  style="background-color: #111; width: 100%; height: 100%; margin: auto; font-family: 'Roboto', sans-serif; min-width: 360px;">
+  <!--nav-->
+  <div id="navBox">
+    <a onclick="window.location.href='index.html'">
+      <img src="image/logo.svg" alt="home" id="logoBtn">
+    </a>
+    <div class="nav">
+      <button class="navBtn" alt="games" onclick="window.location.href='games.html'">Games</button>
+      <button class="navBtn" alt="count" onclick="window.location.href='count.html'">Count</button>
+	  <button class="navBtn" alt="time" onclick="window.location.href='time.html'">Time</button>
+      <a onclick="window.location.href='aboutus.html'">
+        <button class="navBtn" alt="state">About Us
+          <div id="light"></div>
+        </button>
+      </a>
+    </div>
+  </div>
+  <!--page-->
+  <!--div align="center" class ="titleKotak" id="demo"></div-->
+  <div align="center" id="titleBox">
+    <span id="titleKaler">Trial SPM</span></b><br>
+		<b>ENDED</br>5 December 2022</b>
+	  
+  <!--div align="center" class ="titleKotak" id="demo2"></div-->
+  <div align="center" id="titleBox">
+	<span id="titleKaler">SPM</span></b><br>
+	  <b>ENDED</br>13 March 2023</b>
+</body>
+
+</html>
